@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-tap-highlight-color: transparent; }
+  body { @apply bg-slate-100 font-sans text-slate-800 antialiased; }
+  :focus-visible { @apply outline-none ring-2 ring-brand-500 ring-offset-2; }
+  input[type='file']::file-selector-button {
+    @apply mr-3 cursor-pointer rounded-md border-0 bg-brand-50 px-3 py-1.5 text-sm font-semibold text-brand-800;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

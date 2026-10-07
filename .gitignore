@@ -1,0 +1,8 @@
+backend/vendor
+backend/node_modules
+backend/.env
+backend/storage/app/private
+frontend/node_modules
+frontend/dist
+frontend/.env
+.DS_Store
